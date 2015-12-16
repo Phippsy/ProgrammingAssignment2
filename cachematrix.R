@@ -8,7 +8,7 @@
         set<-function(y) {
             mx<<-y
             # reset the inverse matrix so it has to be recomputed with values of newly supplied matrix
-            inv.mx<-NULL 
+            inv.mx<-NULL
         }
         # Get the matrix values
         get<-function() {
@@ -39,7 +39,7 @@
         if ( !is.null(inv.mx) ) {
             # Send the user a message that the value is being retrieved.
             message("Retrieving values from cache")
-            return inv.mx
+            return(inv.mx)
         }
         # If the inverse matrix value is null, compute the inverse and assign its' values to inv.mx
             # Store the matrix in a local variable
