@@ -42,10 +42,11 @@
             return(inv.mx)
         }
         # If the inverse matrix value is null, compute the inverse and assign its' values to inv.mx
-            # Store the matrix in a local variable
-            mx<-x$get()
-            # Compute the inverse matrix values and write them back to x$setInverse
-            inv.mx<-solve(mx, ...)
-            # Return the values of the inverse matrix
-            inv.mx
+    
+        # Store the matrix in a local variable
+        mx<-x$get()
+        # Compute the inverse matrix values and write them back to x$setInverse
+        inv.mx<-solve(mx, ...)
+        # Return the values of the inverse matrix
+        inv.mx
     }
